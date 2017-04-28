@@ -18,10 +18,31 @@ int main(){
                    Suma += pow(numX, i) / factorial(i);   
                 }
                 cout<< "La Respuesta Final es: "<< Suma + 1<< endl;
+		cout<< "-----------------------------------------------------"<< endl;
                 break;}
 
             case 2:{
-                
+                float num1, num2, num3, num4, num5, num6, num7, num8;
+		cout<< "Trapezoide 1"<< endl;
+                cout<< "Ingrese vertice 1: ";
+  		cin>> num1;
+		cout<< "Ingrese vertice 2: ";
+		cin>> num2;
+		cout<< "Ingrese vertice 3: ";
+		cin>> num3;
+		cout<< "Ingrese vertice 4: ";
+		cin>> num4;
+		cout<< "Trapezoide 2"<< endl;
+		cout<< "Ingrese vertice 5: ";
+		cin>> num5;
+		cout<< "Ingrese vertice 6: ";
+		cin>> num6;
+		cout<< "Ingrese vertice 7: ";
+		cin>> num7;
+		cout<< "Ingrese vertice 8: ";
+		cin>> num8;
+		
+		cout<< "-----------------------------------------------------"<< endl;
                 break;}
 
             case 3:
@@ -55,7 +76,7 @@ int menu(){
 
         cout << " Ingrese una opción: ";
         cin >> opcion;
-
+        cout<< "--------------------------------------------"<< endl;
         if (opcion > 0 && opcion < 3)
             valido = true;
         else {
