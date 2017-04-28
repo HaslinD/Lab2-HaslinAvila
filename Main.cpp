@@ -22,26 +22,57 @@ int main(){
                 break;}
 
             case 2:{
-                float num1, num2, num3, num4, num5, num6, num7, num8;
-		cout<< "Trapezoide 1"<< endl;
-                cout<< "Ingrese vertice 1: ";
-  		cin>> num1;
-		cout<< "Ingrese vertice 2: ";
-		cin>> num2;
-		cout<< "Ingrese vertice 3: ";
-		cin>> num3;
-		cout<< "Ingrese vertice 4: ";
-		cin>> num4;
-		cout<< "Trapezoide 2"<< endl;
-		cout<< "Ingrese vertice 5: ";
-		cin>> num5;
-		cout<< "Ingrese vertice 6: ";
-		cin>> num6;
-		cout<< "Ingrese vertice 7: ";
-		cin>> num7;
-		cout<< "Ingrese vertice 8: ";
-		cin>> num8;
+                double x1, y1, x2, y2, x3, y3, x4, y4;
+		double dist1, dist2, dist3, dist4;
+		double distT1, distT2, distT3, distT4, distT5, distT6;
 		
+			
+                cout<< "Ingrese vertice x1: ";
+  		cin>> x1;
+		cout<< "Ingrese vertice y1: ";
+		cin>> y1;
+		cout<< "Ingrese vertice x2: ";
+		cin>> x2;
+		cout<< "Ingrese vertice y2: ";
+		cin>> y2;
+		cout<< "Ingrese vertice x3: ";
+		cin>> x3;
+		cout<< "Ingrese vertice y3: ";
+		cin>> y3;
+		cout<< "Ingrese vertice x4: ";
+		cin>> x4;
+		cout<< "Ingrese vertice y4: ";
+		cin>> y4;
+		cout<< " "<< endl;
+		//Puntos Ingresados
+		cout<< "Los Puntos son: "<< endl;
+		cout<< "("<< x1<< ","<< y1<< ")"<< endl;		
+		cout<< "("<< x2<< ","<< y2<< ")"<< endl;
+		cout<< "("<< x3<< ","<< y3<< ")"<< endl;
+		cout<< "("<< x4<< ","<< y4<< ")"<< endl;
+		cout<< " "<< endl;
+		//Medidas de los lados del trapezoide
+		cout<< "los lados del Trapezoide miden: "<< endl;
+		dist1 = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
+		cout<< "Lado 1: "<< dist1<< endl;
+		dist2 = sqrt(pow((x3 - x2), 2) + pow((y3 - y2), 2));
+		cout<< "Lado 2: "<< dist2<< endl;
+		dist3 = sqrt(pow((x4 - x3), 2) + pow((y4 - y3), 2));
+		cout<< "Lado 3: "<< dist3<< endl;
+		dist4 = sqrt(pow((x1 - x4), 2) + pow((y1 - y4), 2));
+		cout<< "Lado 4: "<< dist4<< endl;
+		cout<< " "<< endl;
+		//Medidas del Triangulo 1
+		distT1 = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
+		distT2 = sqrt(pow((x4 - x2), 2) + pow((y4 - y2), 2));
+		distT3 = sqrt(pow((x1 - x4), 2) + pow((y1 - y4), 2));
+		cout<< " "<< endl;
+		//Medidad del Traingulo 2
+		distT4 = sqrt(pow((x3 - x2), 2) + pow((y3 - y2), 2));
+		distT5 = sqrt(pow((x4 - x3), 2) + pow((y4 - y3), 2));
+		distT6 = sqrt(pow((x2 - x4), 2) + pow((y2 - y4), 2));
+		cout<< " "<< endl;
+			
 		cout<< "-----------------------------------------------------"<< endl;
                 break;}
 
@@ -64,6 +95,8 @@ int factorial(int i){
     return i * factorial(i-1);
   }
 }
+
+
 
 int menu(){
     int opcion;
