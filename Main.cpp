@@ -44,6 +44,7 @@ int main(){
 		cout<< "Ingrese vertice y4: ";
 		cin>> y4;
 		cout<< " "<< endl;
+		
 		//Puntos Ingresados
 		cout<< "Los Puntos son: "<< endl;
 		cout<< "("<< x1<< ","<< y1<< ")"<< endl;		
@@ -51,6 +52,7 @@ int main(){
 		cout<< "("<< x3<< ","<< y3<< ")"<< endl;
 		cout<< "("<< x4<< ","<< y4<< ")"<< endl;
 		cout<< " "<< endl;
+		
 		//Medidas de los lados del trapezoide
 		cout<< "los lados del Trapezoide miden: "<< endl;
 		dist1 = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
@@ -62,17 +64,65 @@ int main(){
 		dist4 = sqrt(pow((x1 - x4), 2) + pow((y1 - y4), 2));
 		cout<< "Lado 4: "<< dist4<< endl;
 		cout<< " "<< endl;
+		
 		//Medidas del Triangulo 1
+		cout<< "los lados del Triangulo 1 Miden: "<< endl;
 		distT1 = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
-		distT2 = sqrt(pow((x4 - x2), 2) + pow((y4 - y2), 2));
-		distT3 = sqrt(pow((x1 - x4), 2) + pow((y1 - y4), 2));
+		distT3 = sqrt(pow((x4 - x2), 2) + pow((y4 - y2), 2));
+		distT2 = sqrt(pow((x1 - x4), 2) + pow((y1 - y4), 2));
+		cout<< "Lado 1: "<< distT1<< endl;
+		cout<< "Lado 2: "<< distT2<< endl;
+		cout<< "Lado 3: "<< distT3<< endl;
 		cout<< " "<< endl;
+		
 		//Medidad del Traingulo 2
+		cout<< "los lados del Triangulo 2 Miden: "<< endl;
 		distT4 = sqrt(pow((x3 - x2), 2) + pow((y3 - y2), 2));
 		distT5 = sqrt(pow((x4 - x3), 2) + pow((y4 - y3), 2));
 		distT6 = sqrt(pow((x2 - x4), 2) + pow((y2 - y4), 2));
+		cout<< "Lado 1: "<< distT4<< endl;
+		cout<< "Lado 2: "<< distT5<< endl;
+		cout<< "Lado 3: "<< distT6<< endl;
 		cout<< " "<< endl;
-			
+		
+		//Semiperimetros
+		double semperim1, semperim2;
+		semperim1 = (distT1 + distT2 + distT3) / 2;
+		semperim2 = (distT4 + distT5 + distT6) / 2;
+		cout<< "Semiperimetro Traingulo 1: "<<semperim1 << endl;
+		cout<< "Semiperimetro Traingulo 2: "<<semperim2 << endl;
+		cout<< " "<< endl;
+
+		//Perimetro
+		double perim1, perim2;
+		Perim1 = (distT1 + distT2 + distT3);
+		Perim2 = (distT4 + distT5 + distT6);
+		cout<< "Perimetro Traingulo 1: "<<perim1 << endl;
+ 		cout<< "Perimetro Traingulo 2: "<<perim2 << endl;
+		cout<< " "<< endl;
+		
+		//Altura Triangulo 1
+		cout<< "Las Alturas del Triangulo 1 Miden: "<< endl;
+		double Altu1, Altu2, Altu3;
+		Altu1 = (2/distT1) * sqrt(semperim1(semperim1 - distT1)*(semperim1 - distT2)*(semperim1 - distT3));
+		Altu2 = (2/distT2) * sqrt(semperim1(semperim1 - distT1)*(semperim1 - distT2)*(semperim1 - distT3));
+		Altu3 = (2/distT3) * sqrt(semperim1(semperim1 - distT1)*(semperim1 - distT2)*(semperim1 - distT3));
+		cout<< "Altura 1:"<< Altu1<< endl;
+		cout<< "Altura 2:"<< Altu2<< endl;
+		cout<< "Altura 3:"<< Altu3<< endl;
+		cout<< " "<< endl;
+		
+		//Altura Triangulo 2
+		cout<< "Las Alturas del TRiangulo 2 Miden: "<< endl;
+		double Altu4, Altu5, Altu6;
+		Altu4 = (2/distT4) * sqrt(semperim2(semperim2 - distT4)*(semperim2 - distT5)*(semperim2 - distT6));
+                Altu5 = (2/distT5) * sqrt(semperim2(semperim2 - distT4)*(semperim2 - distT5)*(semperim2 - distT6));
+                Altu6 = (2/distT6) * sqrt(semperim2(semperim2 - distT4)*(semperim2 - distT5)*(semperim2 - distT6));
+		cout<< "Altura 1:"<< Altu4<< endl;
+		cout<< "Altura 2:"<< Altu5<< endl;
+		cout<< "Altura 3:"<< Altu6<< endl;
+		cout<< " "<< endl;
+		
 		cout<< "-----------------------------------------------------"<< endl;
                 break;}
 
