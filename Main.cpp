@@ -57,19 +57,19 @@ int main(){
 		cout<< "los lados del Trapezoide miden: "<< endl;
 		dist1 = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
 		cout<< "Lado 1: "<< dist1<< endl;
-		dist2 = sqrt(pow((x4 - x2), 2) + pow((y4 - y2), 2));
+		dist2 = sqrt(pow((x1 - x3), 2) + pow((y1 - y3), 2));
 		cout<< "Lado 2: "<< dist2<< endl;
 		dist3 = sqrt(pow((x3 - x4), 2) + pow((y3 - y4), 2));
 		cout<< "Lado 3: "<< dist3<< endl;
-		dist4 = sqrt(pow((x1 - x3), 2) + pow((y1 - y3), 2));
+		dist4 = sqrt(pow((x4 - x2), 2) + pow((y4 - y2), 2));
 		cout<< "Lado 4: "<< dist4<< endl;
 		cout<< " "<< endl;
 		
 		//Medidas del Triangulo 1
 		cout<< "los lados del Triangulo 1 Miden: "<< endl;
 		distT1 = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
-		distT3 = sqrt(pow((x4 - x2), 2) + pow((y4 - y2), 2));
-		distT2 = sqrt(pow((x1 - x4), 2) + pow((y1 - y4), 2));
+		distT2 = sqrt(pow((x4 - x3), 2) + pow((y4 - y3), 2));
+		distT3 = sqrt(pow((x1 - x4), 2) + pow((y1 - y4), 2));
 		cout<< "Lado 1: "<< distT1<< endl;
 		cout<< "Lado 2: "<< distT2<< endl;
 		cout<< "Lado 3: "<< distT3<< endl;
@@ -77,9 +77,9 @@ int main(){
 		
 		//Medidad del Traingulo 2
 		cout<< "los lados del Triangulo 2 Miden: "<< endl;
-		distT4 = sqrt(pow((x3 - x2), 2) + pow((y3 - y2), 2));
-		distT5 = sqrt(pow((x4 - x3), 2) + pow((y4 - y3), 2));
-		distT6 = sqrt(pow((x2 - x4), 2) + pow((y2 - y4), 2));
+		distT4 = sqrt(pow((x1 - x3), 2) + pow((y1 - y3), 2));
+		distT5 = sqrt(pow((x4 - x2), 2) + pow((y4 - y2), 2));
+		distT6 = sqrt(pow((x1 - x4), 2) + pow((y1 - y4), 2));
 		cout<< "Lado 1: "<< distT4<< endl;
 		cout<< "Lado 2: "<< distT5<< endl;
 		cout<< "Lado 3: "<< distT6<< endl;
@@ -122,6 +122,13 @@ int main(){
 		cout<< "Altura 3:"<< Altu6<< endl;
 		cout<< " "<< endl;
 		
+
+		//Area del Trapezoide
+		double AreaT, Area1, Area2;
+		Area1 = ((distT3 * Altu3) / 2);
+		Area2 = ((distT6 * Altu6) / 2);
+		AreaT = Area1 + Area2;
+		cout<<"El area del trapezoide es de: "<< AreaT<< endl;
 		cout<< "-----------------------------------------------------"<< endl;
                 break;}
 
