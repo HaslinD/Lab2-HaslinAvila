@@ -26,23 +26,23 @@ int main(){
 		double dist1, dist2, dist3, dist4;
 		double distT1, distT2, distT3, distT4, distT5, distT6;
 		
-			
-                cout<< "Ingrese vertice x1: ";
-  		cin>> x1;
-		cout<< "Ingrese vertice y1: ";
-		cin>> y1;
-		cout<< "Ingrese vertice x2: ";
-		cin>> x2;
-		cout<< "Ingrese vertice y2: ";
-		cin>> y2;
-		cout<< "Ingrese vertice x3: ";
-		cin>> x3;
-		cout<< "Ingrese vertice y3: ";
-		cin>> y3;
-		cout<< "Ingrese vertice x4: ";
-		cin>> x4;
-		cout<< "Ingrese vertice y4: ";
-		cin>> y4;
+					
+	     	cout<< "Ingrese vertice x1: ";
+               	cin>> x1;
+                cout<< "Ingrese vertice y1: ";
+                cin>> y1;
+                cout<< "Ingrese vertice x2: ";
+                cin>> x2;
+                cout<< "Ingrese vertice y2: ";
+                cin>> y2;
+                cout<< "Ingrese vertice x3: ";
+                cin>> x3;
+                cout<< "Ingrese vertice y3: ";
+                cin>> y3;
+                cout<< "Ingrese vertice x4: ";
+                cin>> x4;
+                cout<< "Ingrese vertice y4: ";
+                cin>> y4;
 		cout<< " "<< endl;
 		
 		//Puntos Ingresados
